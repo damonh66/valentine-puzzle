@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Unlock Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="curtain" class="stage active">
+    <div class="pulse-dot"></div>
+    <p class="hint">Tap the keyhole</p>
+  </section>
+
+  <section id="timeline" class="stage">
+    <div class="starfield"></div>
+    <p class="hint">Drag the memories in order</p>
+  </section>
+
+  <section id="vinyl" class="stage">
+    <div class="record"></div>
+    <div class="clips"></div>
+    <p class="hint">Play the echoes in order</p>
+  </section>
+
+  <section id="lightlock" class="stage">
+    <div class="grid"></div>
+    <p class="hint">Find the five true mirrors</p>
+  </section>
+
+  <section id="cipher" class="stage">
+    <input id="codeInput" type="text" inputmode="numeric" maxlength="4" placeholder="----">
+    <p class="hint">Listen to the beat</p>
+  </section>
+
+  <section id="roseMaze" class="stage">
+    <canvas id="mazeCanvas"></canvas>
+    <p class="hint">Guide the flame to the rose (arrow keys)</p>
+  </section>
+
+  <section id="capsule" class="stage">
+    <div class="wheel">
+      <div class="date-slot"></div>
+      <button class="spin">Spin</button>
+    </div>
+    <p class="hint">Land on the day we first met</p>
+  </section>
+
+  <section id="breath" class="stage">
+    <div class="circle-track"><div class="circle-dot"></div></div>
+    <p class="hint">Breathe with the dot for 30 s</p>
+  </section>
+
+  <section id="finale" class="stage">
+    <div id="lottieCandle"></div>
+    <h1>Will you be my Valentine?</h1>
+    <button id="yesBtn">Yes</button>
+  </section>
+
+  <audio id="bgMusic" loop src="assets/lofi.mp3"></audio>
+  <audio id="swellMusic" src="assets/swells.mp3"></audio>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
